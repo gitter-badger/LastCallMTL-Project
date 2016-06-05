@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LastCallMTL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body>
+<!-- creating a space on top for a nav bar-->
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <!-- title of site -->
+        <a href="Welcome.html" class= "navbar-brand">LastCallMTL<span class="glyphicon glyphicon-glass"></span> </a>
+
+        <!-- creating button for nav bar: target the class navHeaderCollapse when it is clicked/toggled-->
+
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+        </button>
+
+        <!-- creating nav bar-->
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+            <!-- styling of nav bar + putting it on the right side-->
+            <ul class="nav navbar-nav navbar-right">
+                <!--adding contents to the nav bar -->
+                <li><a href="ParticipatingClubs.html"> Participating Clubs </a> </li>
+                <li><a href="HowItWorks.html"> How it Works </a> </li>
+                <li class="active"><a href="About.html"> About Us </a> </li>
+                <!-- this element will be a dropdown menu -->
+                <li class="dropdown">
+                    <!-- caret will create the down arrow next to "objectives" in the navbar -->
+                    <a href="#" class="dropdown-toggle" data-toggle = "dropdown"> Join/Host an Event <b class="caret"></b></a>
+                    <!-- contain all the drop down items -->
+                    <ul class="dropdown-menu">
+                        <li><a href="JoinEvent.html"> Join an Event </a></li>
+                        <li><a href="HostEvent.html"> Create your event </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="AboutUs" class="container shadow">
+    <div id="pic_wrapper">
+        <h1>Meet the Team...</h1>
+        <img src="../img/AboutUs/michel.jpg" alt="Michel" data-toggle="modal" data-target="#MichelModal"/>
+        <img src="../img/AboutUs/steven.jpg" alt="Steven" data-toggle="modal" data-target="#StevenModal"/>
+        <img src="../img/AboutUs/eric.jpg" alt="Eric" data-toggle="modal" data-target="#EricModal"/>
+    </div>
+</div>
+<!--Modal for Michel-->
+<div id="MichelModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- modal Content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"> About Michel Chatmajian </h4>
+            </div>
+            <div class="modal-body">
+                <p>Information inside on michel </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for Steven -->
+<div id="StevenModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- modal Content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"> About Steven Ha </h4>
+            </div>
+            <div class="modal-body">
+                <p>I'm a junior software Developer from Concordia University. Currently I am looking for a work term for the upcoming fall 2016
+                    semester. I am a young and passionate programmer that believes that success is achieved from hard work and league. Even if i
+                    don't become the best programmer in the world, I will someday be to the hokage and protect the ones that I love.
+                </p>
+                <img src="../img/SlideImages/loading.gif" alt="lol"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for Eric -->
+<div id="EricModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- modal Content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"> About Eric Xiao </h4>
+            </div>
+            <div class="modal-body">
+                <p>Information inside on Eric </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/customJS.js"></script>
+</body>
+
+</html>

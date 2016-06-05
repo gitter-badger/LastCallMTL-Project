@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LastCall</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body>
+<!-- creating a space on top for a nav bar-->
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <!-- title of site -->
+        <a href="Welcome.html" class= "navbar-brand">LastCallMTL<span class="glyphicon glyphicon-glass"></span> </a>
+
+        <!-- creating button for nav bar: target the class navHeaderCollapse when it is clicked/toggled-->
+
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+        </button>
+
+        <!-- creating nav bar-->
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+            <!-- styling of nav bar + putting it on the right side-->
+            <ul class="nav navbar-nav navbar-right">
+                <!--adding contents to the nav bar -->
+                <li><a href="ParticipatingClubs.html"> Participating Clubs </a> </li>
+                <li><a href="HowItWorks.html"> How it Works </a> </li>
+                <li><a href="About.html"> About Us </a> </li>
+                <!-- this element will be a dropdown menu -->
+                <li class="dropdown">
+                    <!-- caret will create the down arrow next to "objectives" in the navbar -->
+                    <a href="#" class="dropdown-toggle" data-toggle = "dropdown"> Join/Host an Event <b class="caret"></b></a>
+                    <!-- contain all the drop down items -->
+                    <ul class="dropdown-menu">
+                        <li><a href="JoinEvent.html"> Join an Event </a></li>
+                        <li><a href="HostEvent.html"> Create your event </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <section id="counter">1</section>
+    <section id="slider_wrapper">
+        <div id="slide_back"><img id=slide1" src="../img/SlideImages/SlideShow1.jpg" alt="slide1"/></div>
+        <div id="slide_front"><img id="slide2" src="../img/SlideImages/SlideShow1.jpg" alt="slide1"/></div>
+
+        <div id="controls">
+            <div id="arrow_wrapper">
+                <div id="left" onclick="prevSlide()"></div>
+                <div id="right" onclick="nextSlide()"></div>
+            </div>
+
+            <div id="jumpers">
+                <ul>
+                    <li id="1" onclick="jump(1)" class = "current"></li>
+                    <li id="2" onclick="jump(2)"></li>
+                    <li id="3" onclick="jump(3)"></li>
+                    <li id="4" onclick="jump(4)"></li>
+                    <li id="5" onclick="jump(5)"></li>
+                    <li id="6" onclick="jump(6)"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+
+    </div>
+<footer class="navbar navbar-default navbar-fixed-bottom">
+    <h4>© LastCallMTL ,2016</h4>
+    <h4 id="creator">Project Realised By Eric Xiao, Steven Ha and Michel Chatmajian</h4>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/customJS.js"></script>
+</body>
+
+</html>

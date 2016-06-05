@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body>
+<!-- creating a space on top for a nav bar-->
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <!-- title of site -->
+        <a href="Welcome.html" class= "navbar-brand">Our project name<span class="glyphicon glyphicon-glass"></span> </a>
+
+        <!-- creating button for nav bar: target the class navHeaderCollapse when it is clicked/toggled-->
+
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+        </button>
+
+        <!-- creating nav bar-->
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+            <!-- styling of nav bar + putting it on the right side-->
+            <ul class="nav navbar-nav navbar-right">
+                <!--adding contents to the nav bar -->
+                <li class="active"><a href="ParticipatingClubs.html"> Participating Clubs </a> </li>
+                <li><a href="HowItWorks.html"> How it Works </a> </li>
+                <li><a href="About.html"> About Us </a> </li>
+                <!-- this element will be a dropdown menu -->
+                <li class="dropdown">
+                    <!-- caret will create the down arrow next to "objectives" in the navbar -->
+                    <a href="#" class="dropdown-toggle" data-toggle = "dropdown"> Join/Host an Event <b class="caret"></b></a>
+                    <!-- contain all the drop down items -->
+                    <ul class="dropdown-menu">
+                        <li><a href="JoinEvent.html"> Join an Event </a></li>
+                        <li><a href="HostEvent.html"> Create your event </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron"></div>
+    <div id="information">
+        <!--Ivy Club-->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="LogoPic" src="../img/ivy.png" alt="Ivy Club"/>
+            </div>
+            <div class="ClubInfo col-lg-4">
+
+                3556 Saint-Laurent, Montreal, Canada H2X 2V1
+                Between / Entre Prince Arthur & Sherbrooke
+
+                 <span class="glyphicon glyphicon-earphone">
+                     Telephone 1.514.439.1222
+                 </span>
+                  <span class="glyphicon glyphicon-envelope">
+                      info@clubivymontreal.com
+                 </span>
+                <button>Register</button>
+            </div>
+            <div class="col-lg-4">
+                <iframe width="237" height="212" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQWgnfUoayUwR1oOQxwJUJ6w&key=AIzaSyDDhznaoau94sKb5ESkSSwg_yDSWJt88Sw"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="spacing"></div>
+        <!--JetClub-->
+        <div class="row">
+            <div class="col-lg-4">
+                <iframe width="237" height="212" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvQ-90UEayUwRB8R2GfPDbpM&key=AIzaSyDDhznaoau94sKb5ESkSSwg_yDSWJt88Sw"
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class=" ClubInfo col-lg-4">
+                Information about Jet Club <button>Register</button>
+            </div>
+            <div class="col-lg-4">
+                <img class="LogoPic" src="../img/jet.jpg" alt="Jet Club"/>
+            </div>
+        </div>
+        <div class="spacing"></div>
+        <!--moomba -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="LogoPic" src="../img/moomba.jpg" alt="moomba"/>
+            </div>
+            <div class="ClubInfo col-lg-4">
+                Information about moomba <button>Register</button>
+            </div>
+            <div class="col-lg-4">
+                <iframe width="237" height="212" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7SezOcgjyUwRKGlr0yoAZUU&key=AIzaSyDDhznaoau94sKb5ESkSSwg_yDSWJt88Sw"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/customJS.js"></script>
+</body>
+
+</html>
