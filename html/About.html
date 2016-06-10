@@ -50,11 +50,24 @@
 <div id="AboutUs" class="container shadow">
     <div id="pic_wrapper">
         <h1>Meet the Team...</h1>
-        <img id="michel" src="../img/AboutUs/michel.jpg" alt="Michel" data-toggle="modal" data-target="#MichelModal"/>
-        <img id="steven" src="../img/AboutUs/steven.jpg" alt="Steven" data-toggle="modal" data-target="#StevenModal"/>
-        <img id="eric" src="../img/AboutUs/eric.jpg" alt="Eric" data-toggle="modal" data-target="#EricModal"/>
+        <div class="inlinedisplay" id="michel">
+            <img src="../img/AboutUs/michel.jpg" alt="Michel Chatmajian" data-toggle="modal" data-target="#MichelModal"/>
+        </div>
+        <div class="inlinedisplay" id="steven">
+            <img src="../img/AboutUs/steven.jpg" alt="Steven Ha" data-toggle="modal" data-target="#StevenModal"/>
+
+        </div>
+        <div class="inlinedisplay" id="eric">
+            <img src="../img/AboutUs/eric.jpg" alt="Eric Xiao" data-toggle="modal" data-target="#EricModal"/>
+
+        </div>
+        <div class="inlinedisplay" id="michel2">
+            <img src="../img/AboutUS/michel2.jpg" alt="Michel Chatmajian" data-toggle="modal" data-target="#Michel2Modal"/>
+
+        </div>
     </div>
     Find a way so that when i hover a picture, the radius increase and others decrease
+    Find a way to insert titles under the pictures
 </div>
 <!--Modal for Michel-->
 <div id="MichelModal" class="modal fade" role="dialog">
@@ -67,6 +80,24 @@
             </div>
             <div class="modal-body">
                 <p>I want to be the very best that no one ever was. To catch them all is my real test to play is my cause.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for Michel's Cousin -->
+<div id="Michel2Modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- modal Content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"> About Michel Chatmajian </h4>
+            </div>
+            <div class="modal-body">
+                <p>First Year BAA Student at HEC.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
