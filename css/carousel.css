@@ -36,11 +36,16 @@ body {
 
 #info{
 	position:absolute;
-	left:25%;
-	top:20%;
-    margin: 0 auto; 
+	left:35%;
+  top:12%;
 	z-index:2;
+<<<<<<< HEAD
 	height:30%;
 	width:50%;
 	background-image: url(Shigatsu_image_1.jpg);
+=======
+	height:20%;
+	width:30%;
+	background-image: url(../img/Shigatsu_image_1.jpg);
+>>>>>>> refs/remotes/origin/master
 }
