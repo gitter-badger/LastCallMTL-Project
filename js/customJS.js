@@ -97,7 +97,8 @@ $(document).ready(function(){
     //fade in picture of contributors in AboutUs
     $('#michel').hide().delay(1500).fadeIn(1000);
     $('#steven').hide().delay(2500).fadeIn(1000);
-    $('#eric').hide().delay(3500).fadeIn(1000,function(){
+    $('#eric').hide().delay(3500).fadeIn(1000);
+    $('#michel2').hide().delay(4500).fadeIn(1000,function(){
         $('#pic_wrapper h1').animate({
             borderBottom:'2px solid black',
             width:'40%'
