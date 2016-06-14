@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -48,15 +48,9 @@
 </div>
     <section id="counter">1</section>
     <section id="slider_wrapper">
-        <div id="slide_back"><img id=slide1" src="../img/SlideImages/SlideShow1.jpg" alt="slide1"/></div>
-        <div id="slide_front"><img id="slide2" src="../img/SlideImages/SlideShow1.jpg" alt="slide1"/></div>
-
+        <div id="slide_back"><img id=slide1" src="img/SlideImages/SlideShow1.jpg" alt="slide1"/></div>
+        <div id="slide_front"><img id="slide2" src="img/SlideImages/SlideShow1.jpg" alt="slide1"/></div>
         <div id="controls">
-            <div id="arrow_wrapper">
-                <div id="left" onclick="prevSlide()"></div>
-                <div id="right" onclick="nextSlide()"></div>
-            </div>
-
             <div id="jumpers">
                 <ul>
                     <li id="1" onclick="jump(1)" class = "current"></li>
@@ -67,11 +61,13 @@
                     <li id="6" onclick="jump(6)"></li>
                 </ul>
             </div>
+            <h1 id="welcomingText">Create Your Own Experience</h1>
+            <div id="arrow_wrapper">
+                <div id="left" onclick="prevSlide()"></div>
+                <div id="right" onclick="nextSlide()"></div>
+            </div>
         </div>
     </section>
-    <div class="container">
-
-    </div>
 <footer class="navbar navbar-default navbar-fixed-bottom">
     <h4>© LastCallMTL ,2016</h4>
     <h4 id="creator">Project Realised By Eric Xiao, Steven Ha and Michel Chatmajian</h4>
@@ -79,8 +75,8 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../js/customJS.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/customJS.js"></script>
 </body>
 
 </html>
