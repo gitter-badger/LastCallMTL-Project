@@ -10,13 +10,13 @@ function nextSlide(){
        var nextSlide = 1
     }
     //set rear image to the next slide (Still not visible)
-    $("#slide_back img").attr("src","../img/SlideImages/SlideShow"+nextSlide+".jpg");
+    $("#slide_back img").attr("src","img/SlideImages/SlideShow"+nextSlide+".jpg");
     //clear animation queue, first true stops it, and second stop makes it jump to the end
     $("#slide_front").stop(true,true);
     //hide front image
     $("#slide_front").animate({opacity:"0"},700,"linear",function(){
         //change front image to the next src (currently hidden)
-        $("#slide_front img").attr("src","../img/SlideImages/SlideShow"+nextSlide+".jpg");
+        $("#slide_front img").attr("src","img/SlideImages/SlideShow"+nextSlide+".jpg");
         //display front image
         $("#slide_front").css("opacity","1");
         //Change jumpers
@@ -38,13 +38,13 @@ function prevSlide(){
         var nextSlide = current -1;
     }
     //set rear image to the next slide (Still not visible)
-    $("#slide_back img").attr("src","../img/SlideImages/SlideShow"+nextSlide+".jpg");
+    $("#slide_back img").attr("src","img/SlideImages/SlideShow"+nextSlide+".jpg");
     //clear animation queue, first true stops it, and second stop makes it jump to the end
     $("#slide_front").stop(true,true);
     //hide front image
     $("#slide_front").animate({opacity:"0"},700,"linear",function(){
         //change front image to the next src (currently hidden)
-        $("#slide_front img").attr("src","../img/SlideImages/SlideShow"+nextSlide+".jpg");
+        $("#slide_front img").attr("src","img/SlideImages/SlideShow"+nextSlide+".jpg");
         //display front image
         $("#slide_front").css("opacity","1");
         //Change jumpers
@@ -60,13 +60,13 @@ function prevSlide(){
 function jump(slide){
     clearTimeout(timer);
     //set rear image to the next slide (Still not visible)
-    $("#slide_back img").attr("src","../img/SlideImages/SlideShow"+slide+".jpg");
+    $("#slide_back img").attr("src","img/SlideImages/SlideShow"+slide+".jpg");
     //clear animation queue, first true stops it, and second stop makes it jump to the end
     $("#slide_front").stop(true,true);
     //hide front image
     $("#slide_front").animate({opacity:"0"},700,"linear",function(){
         //change front image to the next src (currently hidden)
-        $("#slide_front img").attr("src","../img/SlideImages/SlideShow"+slide+".jpg");
+        $("#slide_front img").attr("src","img/SlideImages/SlideShow"+slide+".jpg");
         //display front image
         $("#slide_front").css("opacity","1");
         //Change jumpers
