@@ -150,3 +150,7 @@ li>  a:hover:before {
 .inlinedisplay{
     display:inline;
 }
+.inlinedisplay h4{
+	text-align:center;
+	height:20px;
+}
