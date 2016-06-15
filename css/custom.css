@@ -42,6 +42,7 @@ img{
     z-index:5;
     position:relative;
     margin-left:20px;
+    margin-top:8%;
     background-image:url("../img/SlideImages/left.png");
 }
 #left:hover{
@@ -55,6 +56,7 @@ img{
     z-index:5;
     position:relative;
     margin-right:20px;
+    margin-top:8%;
     background-image:url("../img/SlideImages/right.png");
 }
 #right:hover{
@@ -154,7 +156,15 @@ li>  a:hover:before {
 	height:20px;
 }
 #welcomingText{
+    border-style: solid;
+    border-color:white;
+    border-width: 2px;
+    position:absolute;
+    margin-top:10%;
+    margin-left:35%;
+    width:30%;
+}
+#welcomingText h1{
     color:white;
     text-align:center;
-    margin-top:150px;
 }
